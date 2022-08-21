@@ -1,0 +1,9 @@
+name = "ccinstrumental"
+homepage = "https://ccinstrumental.org"
+tags = ["blog", "portfolio", "gallery", "minimalist", "responsive", "flexbox"]
+features = ["blog", "portfolio", "google analytics"]
+min_version = "0.5"
+
+[author]
+  name = ""
+  homepage = ""

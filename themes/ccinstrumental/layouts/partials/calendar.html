@@ -1,0 +1,21 @@
+{{ $directory := "content/" }}
+{{ $filename := "calendar.md" }}
+{{ if (where (readDir $directory) "Name" $filename) }}
+  <section class="calendar" id="calendar">
+    <div class="container middle-xs">
+      <div class="row center-xs">
+        <div class="col-xs-12">
+          <h1>{{ with $.Site.GetPage "page" "calendar" }}{{ .Title }}{{ end }}</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12 middle-xs">
+          {{ with $.Site.GetPage "page" "calendar" }}
+            {{ .Content }}
+	    <iframe src="https://teamup.com/kscaipphkjod7dov7j?showHeader=0&showLogo=0&showSearch=0&showProfileAndInfo=0&showSidepanel=1&disableSidepanel=0&showTitle=0&showViewSelector=1&showMenu=0&showAgendaHeader=1&showAgendaDetails=0&showYearViewHeader=1" style="width: 100%; height: 800px" loading="lazy" frameborder="0"></iframe>
+          {{ end }}
+        </div>
+      </div>
+    </div>
+  </section>
+{{ end }}

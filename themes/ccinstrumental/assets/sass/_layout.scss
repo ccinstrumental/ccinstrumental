@@ -35,7 +35,7 @@ header {
   background-image: url("images/header.png");
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
-  background-size: contain;
+  background-size: cover;
 
   div {
     z-index: 101;
